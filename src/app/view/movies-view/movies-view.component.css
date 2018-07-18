@@ -1,0 +1,44 @@
+#filmlist {
+    font-size: 30px;
+    background-image: url('/assets/third-man.jpg');
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-size: cover;
+    padding-left: 10px;
+}
+/* 
+*{
+    box-sizing: border-box;
+}*/
+
+/* *{ 
+    box-sizing: border-box;
+    background: url('/assets/third-man.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100%;
+  } */
+
+
+
+/* #filmlist {
+    background: url('/assets/third-man.jpg');
+    max-width: 100%;
+    max-height: 100%;
+}
+ */
+/* 
+ /* img {
+   
+    min-height: 100%;
+    min-width: 1024px;
+      
+    
+    width: 100%;
+    height: auto;
+      
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  } */
