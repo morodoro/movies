@@ -1,0 +1,11 @@
+<div id="gallery" *ngIf="postersService.getCurrentPoster()">
+  <h1>{{postersService.getCurrentPoster().title}}</h1>
+  <!-- <button (click)="postersService.prev()"> &#x22B2; </button>
+  <button (click)="postersService.next()"> &#x22B3; </button> -->
+  <img src="{{postersService.getCurrentPoster().url}}" alt="{{postersService.getCurrentPoster().title}}">
+  <p>{{postersService.getCurrentPoster().desc}}</p>
+  <div>
+      <img *ngFor="let poster of postersService.posters; let i = index" src="{{poster.url}}" class="thumbnail" (click)="postersService.setCurrentPostersIndex(i)"
+          [ngClass]="{ selected:poster === postersService.getCurrentPoster() }">
+  </div>
+</div>
